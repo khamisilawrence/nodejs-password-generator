@@ -1,14 +1,18 @@
 #!/usr/bin/env node
 const program = require('commander');
-// const chalk = require('chalk');
-// const clipboardy = require('clipboardy');
 
 const log = console.log;
 const createPassword = require('./utils/createPassword');
 const savePassword = require('./utils/savePassword');
 
-program.version('1.0.0').description('Simple Password Generator');
+/**
+ * CLI tool for generating and optionally saving passwords.
+ */
+program
+  .version('1.0.0')
+  .description('Simple Password Generator');
 
+// Define command-line options
 program
   .option('-l, --length <number>', 'length of password', '8')
   .option('-s, --save', 'save password to passwords.txt')
@@ -16,22 +20,16 @@ program
   .option('-ns, --no-symbols', 'remove symbols')
   .parse();
 
+// Extract options from the parsed program
 const { length, save, numbers, symbols } = program.opts();
 
+// Generate password based on specified options
+const generatedPassword = createPassword(length, !numbers, !symbols);
 
-// Get generated password
-const generatedPassword = createPassword(length, numbers, symbols);
-
-// Save to file
+// Save password to file if the save option is specified
 if (save) {
-  savePassword(generatedPassword)
+  savePassword(generatedPassword);
 }
 
-// Copy to clipboard
-// clipboardy.writeSync(generatedPassword);
-
-// Output generated password
-// log(chalk.blue('Generated Password: ') + chalk.bold(generatedPassword));
+// Output the generated password
 log('Generated Password: ' + generatedPassword);
-// log('Password copied to clipboard');
-
