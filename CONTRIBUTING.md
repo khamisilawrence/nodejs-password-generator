@@ -1,6 +1,6 @@
 ## Contributing
 
-Thank you for considering contributing to the Simple Password Generator CLI! Contributions are encouraged and welcomed. Please follow these guidelines to ensure a smooth and collaborative contribution process.
+Thank you for considering contributing to the PassGen CLI Password Generator! Contributions are encouraged and welcomed. Please follow these guidelines to ensure a smooth and collaborative contribution process.
 
 ### Getting Started
 
@@ -9,8 +9,8 @@ Thank you for considering contributing to the Simple Password Generator CLI! Con
 2. Clone the forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/simple-password-generator.git
-   cd simple-password-generator
+   git clone https://github.com/khamisilawrence/nodejs-password-generator.git
+   cd nodejs-password-generator
    ```
 
 3. Install project dependencies:
@@ -57,4 +57,4 @@ All contributions will go through a code review process. Be prepared to address 
 - Respect the coding style and maintain consistency with the existing codebase.
 - Contributions that enhance documentation are also valuable.
 
-Thank you for contributing to Simple Password Generator CLI!
+Thank you for contributing to PassGen CLI Password Generator!
