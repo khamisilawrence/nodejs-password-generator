@@ -12,7 +12,6 @@
   "author": "Khamisi Lawrence",
   "license": "MIT",
   "dependencies": {
-    "clipboardy": "^4.0.0",
     "commander": "^11.1.0"
   }
 }
