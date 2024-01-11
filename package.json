@@ -1,7 +1,7 @@
 {
   "name": "passgen",
   "version": "1.0.0",
-  "description": "Simple Password Generator",
+  "description": "Simple Command Line Password Generator",
   "main": "index.js",
   "preferGlobal": true,
   "bin": "./index.js",
@@ -12,7 +12,6 @@
   "author": "Khamisi Lawrence",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.3.0",
     "clipboardy": "^4.0.0",
     "commander": "^11.1.0"
   }
