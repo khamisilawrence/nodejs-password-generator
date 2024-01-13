@@ -57,7 +57,7 @@ Replace <length> with the desired password length.
 Example:
 
 ```bash
-passgen -l 12 -s
+  passgen -l 12 -s
 ```
 
 This generates a password of length 12 with symbols and saves it to 'passwords.txt'.
